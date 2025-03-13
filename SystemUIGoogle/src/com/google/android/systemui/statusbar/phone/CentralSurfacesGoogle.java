@@ -68,7 +68,7 @@ import com.android.systemui.plugins.PluginDependencyProvider;
 import com.android.systemui.plugins.PluginManager;
 import com.android.systemui.power.domain.interactor.PowerInteractor;
 import com.android.systemui.recents.ScreenPinningRequest;
-import com.android.systemui.res.R;
+import com.google.android.systemui.res.R;
 import com.android.systemui.scene.domain.interactor.WindowRootViewVisibilityInteractor;
 import com.android.systemui.settings.brightness.BrightnessSliderController;
 import com.android.systemui.settings.UserTracker;
@@ -276,8 +276,8 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
             AlternateBouncerInteractor alternateBouncerInteractor,
             UserTracker userTracker,
             Provider<FingerprintManager> fingerprintManager,
-            TunerService tunerService,
             ActivityStarter activityStarter,
+            TunerService tunerService,
             BrightnessMirrorShowingInteractor brightnessMirrorShowingInteractor,
             GlanceableHubContainerController glanceableHubContainerController,
             EmergencyGestureIntentFactory emergencyGestureIntentFactory,
@@ -305,7 +305,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
                 screenOffAnimationController, wallpaperController, statusBarHideIconsForBouncerManager, lockscreenShadeTransitionController, featureFlags,
                 keyguardUnlockAnimationController, delayableExecutor, messageRouter, wallpaperManager, startingSurfaceOptional, activityTransitionAnimator,
                 deviceStateManager, wiredChargingRippleController, dreamManager, cameraLauncherLazy, lightRevealScrim,
-                alternateBouncerInteractor, userTracker, fingerprintManager, tunerService, activityStarter, brightnessMirrorShowingInteractor,
+                alternateBouncerInteractor, userTracker, fingerprintManager, activityStarter, tunerService, brightnessMirrorShowingInteractor,
                 glanceableHubContainerController, emergencyGestureIntentFactory, viewCaptureAwareWindowManager, burnInProtectionController);
         mContext = context;
         mBatteryStateChangeCallback = new BatteryController.BatteryStateChangeCallback() {
